@@ -9,3 +9,4 @@ __pycache__/
 out/master_crf17.mp4
 out/video_noaudio.mp4
 audio/mix_norm.wav
+out/final_v1_loud.mp4
