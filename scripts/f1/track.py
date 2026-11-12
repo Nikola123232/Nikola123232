@@ -224,7 +224,7 @@ def wall_segment(name, p0, p1, height=1.0, boards=True, fence=True, board_mat=No
         # repeat the board strip every 4 boards (UV x scale)
         uv = b.data.uv_layers[0].data
         for l in uv:
-            l.uv.x *= L / 16.0
+            l.uv.x *= (L / 16.0) * (-1 if face < 0 else 1)
         b.data.materials.append(board_mat)
         objs.append(b)
     if fence:

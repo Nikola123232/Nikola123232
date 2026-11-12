@@ -19,6 +19,7 @@ def render_settings(sc, res=(720, 1280), samples=12, motion_blur=False, shutter=
     sc.cycles.device = 'CPU'
     sc.cycles.samples = samples
     sc.cycles.use_adaptive_sampling = True
+    sc.cycles.time_limit = float(__import__('os').environ.get('CYCLES_TIME_LIMIT', 5.0))
     sc.cycles.adaptive_threshold = 0.04
     sc.cycles.use_denoising = True
     sc.cycles.denoiser = 'OPENIMAGEDENOISE'

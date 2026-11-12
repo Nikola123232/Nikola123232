@@ -17,7 +17,8 @@
 
 ### Environment constraints and trade-offs
 * There's no GPU. Rendering runs on 4 CPU cores. EEVEE only runs through Mesa llvmpipe, at about 14 s per frame. Cycles at full 1080×1920 takes about 21 s per frame even for trivial scenes.
-* **Decision:** Cycles renders at an internal **720×1280** with 10–24 samples, adaptive sampling and OpenImageDenoise. It's then upscaled with Lanczos and sharpened to 1080×1920. All 2D overlays (subtitles, labels, HUD) are drawn at full 1080×1920, so text stays crisp. The 3D imagery is a little softer than a native 1080p render would be.
+* **Decision:** Cycles renders at an internal **720×1280** with 10–12 samples, adaptive sampling, a **5 s per-frame sampling cap** and OpenImageDenoise. It's then upscaled with Lanczos and an unsharp mask to 1080×1920. All 2D overlays (subtitles, labels, HUD, titles) are drawn at full 1080×1920, so text stays crisp.
+  * Trade-off: the 3D imagery is a little softer than a native 1080p render, and motion-blurred backgrounds show slight denoiser blotchiness. Re-rendering at full resolution needs no code changes (`render_settings(res=(1080,1920))`, `CYCLES_TIME_LIMIT=0`) and would take about 3–4× longer.
 * Asset sites (Poly Haven, Sketchfab, blender.org) are blocked by the network policy. **All 3D models are therefore built procedurally in Python**: lofted cross-sections, airfoil extrusions, lathed tyres, skin-modifier bodies and curve-built ribs. None of them are primitive placeholders.
 * Music and SFX are synthesised from scratch in numpy (engine harmonics with Doppler, impact layers, whooshes, heartbeat, cinematic pulse bed). That makes them original and royalty-free.
 
@@ -65,3 +66,13 @@
 ## Audio
 * VO −14 LUFS-ish target, ducking music under narration.
 * SFX: engine (harmonics of firing frequency, Doppler pass-by), tyre screech, impact (sub thump + carbon crack + debris rattle), slow-mo whoosh, heartbeat and low drone in the anatomy scenes, UI blips for callouts, a riser into the final title.
+
+## Implementation notes
+* `scripts/f1/core.py`: material library (livery shader in car-local coordinates, carbon twill, x-ray/reveal shaders), loft/tube/lathe/airfoil builders, camera helpers.
+* `scripts/f1/car.py`: car built from 16 lofted monocoque sections, 8 sidepod sections, NACA-4 wing elements, lathed 18" tyres with compound bands, wishbone suspension, halo and mirrors.
+* `scripts/f1/track.py`: 1.4 km straight into a 60 m-radius left-hander with kerbs, asphalt run-off, three-row TecPro barrier, walls with fictional sponsor boards, catch fencing, grandstands and trees.
+* `scripts/f1/anatomy.py`: armature-rigged metaball skin; 24 vertebrae with discs; 12 rib pairs with costal cartilage; sternum, clavicles, scapulae, pelvis and long bones; brain with procedural gyri; heart, lungs, liver, stomach, kidneys, intestines and vessels.
+* `scripts/f1/gear.py`: helmet, HANS with Stretch-To tethers, six-point harness, seat.
+* `scripts/f1/story.py`: one physical timeline with a slow-motion time ramp. Slide at 1.1 g, then impact at about 183 km/h with 3.2 m of crush, so the deceleration pulse peaks at about 58 g. That's comparable to documented F1 crash peaks of roughly 50–67 g.
+* `scripts/f1/crash.py`: ballistic debris with ground bounces, spark pool, smoke and dust, TecPro chain compression, progressive skid marks.
+* Each shot has its own camera bound by timeline markers, and keys extend ±2 frames, so motion blur never smears across cuts.

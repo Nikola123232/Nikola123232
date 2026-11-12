@@ -66,7 +66,7 @@ for f in range(E0, E1 + 1):
 for f in range(E0, F0): cam_pos[f] = camA
 for f in range(F1 + 1, E1 + 1): cam_pos[f] = camC
 tg = empty("bb_target")
-Wd.setup_render(sc, F0, F1, "s2", samples=12)
+Wd.setup_render(sc, F0, F1, "s2", samples=10)
 for f in range(E0, E1 + 1):
     sc.frame_set(f)
     tg.location = cam_pos[f].matrix_world.to_translation()
