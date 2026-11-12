@@ -1,0 +1,7 @@
+{
+ "file": "out/final_f1_crash_short.mp4",
+ "duration_s": 60.0,
+ "size_MB": 80.62,
+ "video": "h264 (High) 1080x1920 30/1 fps yuv420p, decoded frames=1800",
+ "audio": "aac 48000 Hz 2 ch"
+}

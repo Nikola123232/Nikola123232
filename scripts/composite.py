@@ -240,15 +240,15 @@ def draw_hud(ov, f):
         kmh = h.get("kmh", 0); g = h.get("g", 0); rate = h.get("rate", 1)
         out = 1 - ease((f - 452) / 16)
         x0 = 60 - 420 * (1 - out)
-        panel(d, (x0, 230, x0 + 330, 480))
+        panel(d, (x0, 230, x0 + 380, 480))
         d.text((x0 + 26, 248), "SPEED", font=font(MONT, 30, "Bold"), fill=(170, 200, 230))
         d.text((x0 + 22, 280), f"{kmh:3.0f}", font=font(ANTON, 96), fill=WHITE)
         d.text((x0 + 210, 330), "KM/H", font=font(ANTON, 40), fill=YEL)
         gtxt = "50+" if g >= 50 else f"{g:0.1f}"
         peak_seen = f >= 362
         col = RED if g > 5 or peak_seen else WHITE
-        d.text((x0 + 26, 400), "G-FORCE", font=font(MONT, 30, "Bold"), fill=(170, 200, 230))
-        d.text((x0 + 200, 388), (("PEAK 50+" if peak_seen and g < 5 else gtxt) + " g"), font=font(ANTON, 48), fill=col,
+        d.text((x0 + 26, 398), "G-FORCE", font=font(MONT, 30, "Bold"), fill=(170, 200, 230))
+        d.text((x0 + 26, 432), (("PEAK 50+" if peak_seen and g < 5 else gtxt) + " g"), font=font(ANTON, 40), fill=col,
                anchor="la")
         if rate < 0.6:
             blink = (f // 8) % 2 == 0

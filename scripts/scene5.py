@@ -13,6 +13,7 @@ sc = reset_scene()
 sc.frame_start, sc.frame_end = F0, F1
 floor, floor_m = St.build_studio(grid_color=(0.08, 0.25, 0.6))
 St.studio_lights((2.0, 0, 0.5), key=420, rim=520)
+light("rim_top", "AREA", (1.0, 1.5, 3.2), energy=500, size=3, color=(0.6, 0.8, 1.0), target=(2.0, 0, 0.4))
 P = C.build_car(font=ROOT + "/assets/fonts/Anton-Regular.ttf")
 D = A.build_driver(anatomy=False)
 Gr = G.build_gear(D)
@@ -23,7 +24,10 @@ key_reveal(D["M"]["skin"], E0, 0.0)
 
 # raw carbon survival cell
 tub = P["tub"]
-tub.data.materials.clear(); tub.data.materials.append(carbon_mat("tub_carbon", tint=(0.03, 0.03, 0.035), scale=120))
+tub.data.materials.clear(); tcm = carbon_mat("tub_carbon", scale=55, rough=0.4); tub.data.materials.append(tcm)
+_ck = [n for n in tcm.node_tree.nodes if n.type == 'TEX_CHECKER'][0]
+_ck.inputs["Color1"].default_value = (0.035, 0.037, 0.042, 1); _ck.inputs["Color2"].default_value = (0.11, 0.115, 0.125, 1)
+principled(tcm).inputs["Coat Roughness"].default_value = 0.22
 
 # crash structures (honeycomb amber)
 def honey_mat(name):
@@ -116,11 +120,12 @@ for gname, olist, off, fa, fb in groups:
             for fc_f in range(E0, E1 + 1):
                 pass
             g.data = o.data.copy(); g.data.materials.clear(); g.data.materials.append(glows[gname])
+            dsp = g.modifiers.new("d", 'DISPLACE'); dsp.strength = 0.01
             sol = g.modifiers.new("s", 'SOLIDIFY'); sol.thickness = 0.008; sol.offset = 1
             g.visible_shadow = False
             c = g.constraints.new('COPY_LOCATION'); c.target = o; c.use_offset = False
             c.target_space = 'LOCAL'; c.owner_space = 'LOCAL'
-            key_vis(g, E0, False); key_vis(g, fa, True); key_vis(g, fb + 45, False)
+            key_vis(g, E0, False); key_vis(g, fb - 8, True); key_vis(g, fb + 30, False)
     St.key_glow_windows(glows[gname], [(fb - 6, fb + 24)], E0, E1, 1.0)
 # driver body slowly fades from x-ray (start) to suit as the cell arrives
 key_reveal(D["M"]["skin"], E0, 0.6); key_reveal(D["M"]["skin"], 1380, 0.6); key_reveal(D["M"]["skin"], 1420, 0.0)

@@ -45,10 +45,11 @@ for o in hans_objs:
 gh = St.glow_mat("glow_hans", (0.2, 1.0, 0.45), 4)
 hg = bpy.data.objects.new("hans_glow", Gr["hans"].data.copy()); link(hg)
 hg.data.materials.clear(); hg.data.materials.append(gh)
+dsp = hg.modifiers.new("d", 'DISPLACE'); dsp.strength = 0.006
 sol = hg.modifiers.new("s", 'SOLIDIFY'); sol.thickness = 0.006; sol.offset = 1
 A.parent_to_bone(hg, arm, "spine")
 St.key_glow_windows(gh, [(1196, 1240)], E0, E1, 1.0)
-key_vis(hg, E0, False); key_vis(hg, 1196, True)
+key_vis(hg, E0, False); key_vis(hg, 1196, True); key_vis(hg, 1243, False)
 # harness hidden (not the focus); seat kept
 for o in bpy.data.objects:
     if o.name.startswith(("harness", "seat")):

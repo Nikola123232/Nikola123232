@@ -6,3 +6,6 @@ assets/tts/*.onnx
 assets/tts/*.bin
 *.blend1
 __pycache__/
+out/master_crf17.mp4
+out/video_noaudio.mp4
+audio/mix_norm.wav
