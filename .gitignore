@@ -1,0 +1,8 @@
+.venv/
+.ttsenv/
+scratch/
+renders/
+assets/tts/*.onnx
+assets/tts/*.bin
+*.blend1
+__pycache__/
