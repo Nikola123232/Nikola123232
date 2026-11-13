@@ -10,3 +10,9 @@ out/master_crf17.mp4
 out/video_noaudio.mp4
 audio/mix_norm.wav
 out/final_v1_loud.mp4
+volcano/renders/
+volcano/previews/
+volcano/out/video_noaudio.mp4
+volcano/audio/mix_norm.wav
+volcano/audio/mix_v2*.wav
+volcano/out/assemble_log.txt
