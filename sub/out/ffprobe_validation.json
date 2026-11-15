@@ -1,0 +1,14 @@
+{
+ "file": "/home/user/Nikola123232/sub/out/submarine_implosion_short.mp4",
+ "duration_s": 37.0,
+ "size_MB": 59.43,
+ "video": "h264 (High) 1080x1920 30/1 fps yuv420p, decoded frames=1110",
+ "audio": "aac 48000 Hz 2 ch",
+ "black_segments": [
+  [
+   "36.3",
+   "36.9667"
+  ]
+ ],
+ "integrated_LUFS": "-15.6"
+}

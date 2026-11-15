@@ -1,0 +1,88 @@
+1
+00:00:00,400 --> 00:00:01,705
+Deep underwater,
+
+2
+00:00:01,505 --> 00:00:03,218
+a tiny structural failure can
+
+3
+00:00:03,018 --> 00:00:04,556
+become catastrophic.
+
+4
+00:00:04,806 --> 00:00:06,001
+And when the hull gives
+
+5
+00:00:05,801 --> 00:00:06,420
+way,
+
+6
+00:00:06,220 --> 00:00:08,357
+everything happens almost instantly.
+
+7
+00:00:08,757 --> 00:00:10,912
+At nearly four kilometers deep,
+
+8
+00:00:10,712 --> 00:00:12,489
+water pressure can exceed 380
+
+9
+00:00:12,289 --> 00:00:13,813
+times the pressure at the
+
+10
+00:00:13,613 --> 00:00:14,570
+surface.
+
+11
+00:00:14,920 --> 00:00:16,598
+If the pressure hull fails,
+
+12
+00:00:16,398 --> 00:00:17,748
+the enormous force of the
+
+13
+00:00:17,548 --> 00:00:19,226
+surrounding water can crush the
+
+14
+00:00:19,026 --> 00:00:20,321
+structure inward.
+
+15
+00:00:20,821 --> 00:00:22,224
+The collapse can happen in
+
+16
+00:00:22,024 --> 00:00:23,154
+milliseconds,
+
+17
+00:00:22,954 --> 00:00:24,302
+leaving almost no time to
+
+18
+00:00:24,102 --> 00:00:24,849
+react.
+
+19
+00:00:26,399 --> 00:00:27,637
+At these depths,
+
+20
+00:00:27,437 --> 00:00:29,193
+the ocean's pressure is powerful
+
+21
+00:00:28,993 --> 00:00:30,230
+enough to make a hull
+
+22
+00:00:30,030 --> 00:00:31,613
+failure unsurvivable.
+
