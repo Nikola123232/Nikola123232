@@ -16,3 +16,6 @@ volcano/out/video_noaudio.mp4
 volcano/audio/mix_norm.wav
 volcano/audio/mix_v2*.wav
 volcano/out/assemble_log.txt
+age/work/*.npy
+age/qa/
+age/frames/
