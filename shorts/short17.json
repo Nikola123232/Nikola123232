@@ -1,0 +1,37 @@
+{
+ "src_w": 1920,
+ "src_h": 888,
+ "cam": [
+  173,
+  380,
+  489,
+  576
+ ],
+ "game": [
+  495,
+  0,
+  1745,
+  785
+ ],
+ "inpaint": [
+  [
+   1570,
+   0,
+   1750,
+   215
+  ]
+ ],
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/2d485811-copy_BFBF2207-C2E2-469F-825B-146496ADD81B.mov",
+ "duration": 11.1667,
+ "out": "/home/user/Nikola123232/shorts/short17.mp4",
+ "captions": [
+  [
+   0.0,
+   11.1667,
+   "IShowSpeed is thrilled he can pick up an apple",
+   [
+    "apple"
+   ]
+  ]
+ ]
+}
