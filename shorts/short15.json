@@ -1,0 +1,157 @@
+{
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/b39af83f-copy_2F0D0AA6-16C0-4555-8B99-C153F3EADB38.mov",
+ "src_w": 1280,
+ "src_h": 592,
+ "cam": [
+  116,
+  253,
+  326,
+  384
+ ],
+ "game": [
+  335,
+  62,
+  1165,
+  488
+ ],
+ "inpaint": [
+  [
+   1030,
+   50,
+   1166,
+   140
+  ]
+ ],
+ "duration": 47.8667,
+ "out": "/home/user/Nikola123232/shorts/short15.mp4",
+ "captions": [
+  [
+   3.5,
+   4.01,
+   "Bro, no way",
+   []
+  ],
+  [
+   4.01,
+   5.2,
+   "we're about to actually...",
+   []
+  ],
+  [
+   7.0,
+   7.9,
+   "Is this canon?",
+   [
+    "canon?"
+   ]
+  ],
+  [
+   8.7,
+   9.07,
+   "I mean,",
+   [
+    "canon?"
+   ]
+  ],
+  [
+   9.07,
+   9.8,
+   "is this canon?",
+   [
+    "canon?"
+   ]
+  ],
+  [
+   15.4,
+   16.22,
+   "But we're actually",
+   []
+  ],
+  [
+   16.22,
+   17.5,
+   "about to play a game in a...",
+   []
+  ],
+  [
+   23.0,
+   24.07,
+   "This is happening",
+   [
+    "happening"
+   ]
+  ],
+  [
+   24.07,
+   24.7,
+   "right now.",
+   [
+    "happening"
+   ]
+  ],
+  [
+   25.3,
+   26.5,
+   "This is happening",
+   [
+    "happening"
+   ]
+  ],
+  [
+   26.5,
+   27.2,
+   "right now.",
+   [
+    "happening"
+   ]
+  ],
+  [
+   31.5,
+   32.1,
+   "New game.",
+   []
+  ],
+  [
+   33.3,
+   34.95,
+   "I'm about to play a different",
+   [
+    "different"
+   ]
+  ],
+  [
+   34.95,
+   36.2,
+   "game in the same game.",
+   [
+    "different"
+   ]
+  ],
+  [
+   41.4,
+   42.9,
+   "Yo, what is happening?",
+   [
+    "happening?"
+   ]
+  ],
+  [
+   43.4,
+   45.85,
+   "I'm playing a whole...",
+   [
+    "GTA",
+    "6."
+   ]
+  ],
+  [
+   45.85,
+   47.86,
+   "I'm playing GTA 6.",
+   [
+    "GTA",
+    "6."
+   ]
+  ]
+ ]
+}
