@@ -1,0 +1,37 @@
+{
+ "src_w": 1280,
+ "src_h": 592,
+ "cam": [
+  116,
+  253,
+  326,
+  384
+ ],
+ "game": [
+  335,
+  62,
+  1165,
+  488
+ ],
+ "inpaint": [
+  [
+   1030,
+   50,
+   1166,
+   140
+  ]
+ ],
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/5f9a7595-copy_95E23502-AAFE-4A32-B576-47F23715D9FF.mov",
+ "duration": 27.0667,
+ "out": "/home/user/Nikola123232/shorts/short21.mp4",
+ "captions": [
+  [
+   0.0,
+   27.0667,
+   "IShowSpeed is hooping",
+   [
+    "hooping"
+   ]
+  ]
+ ]
+}
