@@ -1,0 +1,85 @@
+{
+ "src_w": 1280,
+ "src_h": 592,
+ "cam": [
+  116,
+  253,
+  326,
+  384
+ ],
+ "game": [
+  335,
+  62,
+  1165,
+  488
+ ],
+ "inpaint": [
+  [
+   1030,
+   50,
+   1166,
+   140
+  ]
+ ],
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/0c7fcc02-copy_E26A85E9-8CD9-4384-8A5B-4A3072A53731.mov",
+ "duration": 30.1333,
+ "out": "/home/user/Nikola123232/shorts/short10.mp4",
+ "captions": [
+  [
+   2.99,
+   7.01,
+   "Go to the plane go to the plane",
+   []
+  ],
+  [
+   7.82,
+   9.38,
+   "Get it get it get it",
+   []
+  ],
+  [
+   11.53,
+   12.85,
+   "Get in,",
+   []
+  ],
+  [
+   12.85,
+   14.17,
+   "get in!",
+   [
+    "in!"
+   ]
+  ],
+  [
+   14.17,
+   15.67,
+   "Come on!",
+   [
+    "on!"
+   ]
+  ],
+  [
+   15.67,
+   16.99,
+   "We are!",
+   [
+    "are!"
+   ]
+  ],
+  [
+   18.03,
+   19.59,
+   "I don't even know how to fly!",
+   [
+    "fly!"
+   ]
+  ],
+  [
+   21.42,
+   24.8,
+   "I don't even know how to fly",
+   []
+  ]
+ ]
+}

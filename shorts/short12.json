@@ -1,0 +1,145 @@
+{
+ "src_w": 1280,
+ "src_h": 592,
+ "cam": [
+  116,
+  253,
+  326,
+  384
+ ],
+ "game": [
+  335,
+  62,
+  1165,
+  488
+ ],
+ "inpaint": [
+  [
+   1030,
+   50,
+   1166,
+   140
+  ]
+ ],
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/2b659f50-copy_EADBE8FD-880F-4FEB-8198-DCE39384BBAC.mov",
+ "duration": 43.6667,
+ "out": "/home/user/Nikola123232/shorts/short12.mp4",
+ "captions": [
+  [
+   0.11,
+   0.87,
+   "Stay fighting!",
+   [
+    "fighting!"
+   ]
+  ],
+  [
+   1.61,
+   2.58,
+   "Uh oh,",
+   []
+  ],
+  [
+   2.58,
+   4.35,
+   "World Star!",
+   [
+    "Star!"
+   ]
+  ],
+  [
+   11.37,
+   12.46,
+   "Hey,",
+   []
+  ],
+  [
+   12.46,
+   13.83,
+   "do it",
+   []
+  ],
+  [
+   14.83,
+   15.81,
+   "Oh sh*t!",
+   [
+    "sh*t!"
+   ]
+  ],
+  [
+   15.81,
+   16.78,
+   "Oh sh*t!",
+   [
+    "sh*t!"
+   ]
+  ],
+  [
+   16.78,
+   18.98,
+   "Oh no get his a**!",
+   [
+    "a**!"
+   ]
+  ],
+  [
+   19.47,
+   20.29,
+   "Get 'em!",
+   [
+    "'em!"
+   ]
+  ],
+  [
+   21.35,
+   22.86,
+   "Okay wait,",
+   []
+  ],
+  [
+   22.86,
+   24.96,
+   "wait I'm done.",
+   []
+  ],
+  [
+   24.96,
+   27.07,
+   "What the f*ck?",
+   [
+    "f*ck?"
+   ]
+  ],
+  [
+   28.68,
+   30.61,
+   "They don't make it just say",
+   []
+  ],
+  [
+   30.61,
+   31.97,
+   "I'm done and leave.",
+   []
+  ],
+  [
+   37.96,
+   39.53,
+   "They need to say I'm done",
+   []
+  ],
+  [
+   39.53,
+   40.16,
+   "and leave.",
+   []
+  ],
+  [
+   42.28,
+   43.2,
+   "Bro",
+   []
+  ]
+ ]
+}

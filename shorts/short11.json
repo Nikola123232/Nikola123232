@@ -1,0 +1,113 @@
+{
+ "src_w": 1280,
+ "src_h": 592,
+ "cam": [
+  116,
+  253,
+  326,
+  384
+ ],
+ "game": [
+  335,
+  62,
+  1165,
+  488
+ ],
+ "inpaint": [
+  [
+   1030,
+   50,
+   1166,
+   140
+  ]
+ ],
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/1e719c60-copy_046DFCA3-63A3-4F66-B3C7-2E7962E90A38.mov",
+ "duration": 33.2667,
+ "out": "/home/user/Nikola123232/shorts/short11.mp4",
+ "captions": [
+  [
+   1.93,
+   4.23,
+   "Bro with them phones",
+   []
+  ],
+  [
+   5.26,
+   7.96,
+   "Get off the- Get your a**",
+   []
+  ],
+  [
+   7.96,
+   9.25,
+   "off the way!",
+   [
+    "way!"
+   ]
+  ],
+  [
+   10.63,
+   11.01,
+   "Ooh,",
+   []
+  ],
+  [
+   11.01,
+   13.65,
+   "damn look at her elbows! Ow,",
+   []
+  ],
+  [
+   13.65,
+   16.76,
+   "I'm so damn I know she feel that.",
+   []
+  ],
+  [
+   16.76,
+   17.04,
+   "Yo,",
+   []
+  ],
+  [
+   17.04,
+   18.27,
+   "I'm so sorry.",
+   []
+  ],
+  [
+   20.01,
+   21.86,
+   "Hello? Yes?",
+   [
+    "Yes?"
+   ]
+  ],
+  [
+   23.56,
+   24.78,
+   "Just a little,",
+   []
+  ],
+  [
+   24.78,
+   25.73,
+   "that's all.",
+   []
+  ],
+  [
+   26.28,
+   30.85,
+   "Yes? Mmm.",
+   []
+  ],
+  [
+   31.63,
+   32.77,
+   "Damn!",
+   [
+    "Damn!"
+   ]
+  ]
+ ]
+}

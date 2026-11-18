@@ -1,0 +1,65 @@
+{
+ "src_w": 1280,
+ "src_h": 592,
+ "cam": [
+  116,
+  253,
+  326,
+  384
+ ],
+ "game": [
+  335,
+  62,
+  1165,
+  488
+ ],
+ "inpaint": [
+  [
+   1030,
+   50,
+   1166,
+   140
+  ]
+ ],
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/c39099a5-copy_81AAC741-16D6-4D29-A92E-54FA092630E4.mov",
+ "duration": 42.5,
+ "out": "/home/user/Nikola123232/shorts/short14.mp4",
+ "captions": [
+  [
+   22.06,
+   25.12,
+   "How do I kill it?",
+   [
+    "it?"
+   ]
+  ],
+  [
+   33.0,
+   34.33,
+   "OPEN!",
+   [
+    "OPEN!"
+   ]
+  ],
+  [
+   34.33,
+   38.31,
+   "WHAT THE f*ck?!",
+   [
+    "f*ck?!"
+   ]
+  ],
+  [
+   40.65,
+   41.4,
+   "Oh my god,",
+   []
+  ],
+  [
+   41.4,
+   42.46,
+   "it's no winch.",
+   []
+  ]
+ ]
+}
