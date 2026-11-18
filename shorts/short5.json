@@ -1,0 +1,38 @@
+{
+ "src_w": 1920,
+ "src_h": 888,
+ "cam": [
+  173,
+  380,
+  489,
+  576
+ ],
+ "game": [
+  495,
+  0,
+  1745,
+  785
+ ],
+ "inpaint": [
+  [
+   1570,
+   0,
+   1750,
+   215
+  ]
+ ],
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/d1678786-copy_7B07E393-52F1-48A1-988A-C50A094377CC.mov",
+ "duration": 16.7,
+ "out": "/home/user/Nikola123232/shorts/short5.mp4",
+ "captions": [
+  [
+   0.0,
+   16.7,
+   "IShowSpeed went silent watching GTA 6",
+   [
+    "GTA",
+    "6"
+   ]
+  ]
+ ]
+}
