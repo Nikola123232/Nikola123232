@@ -23,3 +23,5 @@ sub/out/video_noaudio.mp4
 sleep/out/video_noaudio.mp4
 sub/out/segment.mp4
 sleep/out/segment.mp4
+shorts/qa/
+shorts/log*.txt
