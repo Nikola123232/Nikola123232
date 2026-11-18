@@ -38,7 +38,7 @@ def draw_caption(canvas, t):
             for ln in lines:
                 x = (W - fnt.getlength(ln)) / 2
                 for w_ in ln.split(" "):
-                    col = (255, 214, 10, 255) if any(tok in w_.lower().strip(".,?!…'") for h in hl for tok in h.lower().split()) else (255, 255, 255, 255)
+                    col = (255, 214, 10, 255) if any(tok == w_.lower().strip(".,?!…'") for h in hl for tok in h.lower().split()) else (255, 255, 255, 255)
                     d.text((x + 3, y + 4), w_, font=fnt, fill=(0, 0, 0, 150)); d.text((x, y), w_, font=fnt, fill=col, stroke_width=6, stroke_fill=(0, 0, 0, 255))
                     x += fnt.getlength(w_ + " ")
                 y += 80
