@@ -1,0 +1,66 @@
+{
+ "src_w": 1280,
+ "src_h": 592,
+ "cam": [
+  116,
+  253,
+  326,
+  384
+ ],
+ "game": [
+  335,
+  62,
+  1165,
+  488
+ ],
+ "inpaint": [
+  [
+   1030,
+   50,
+   1166,
+   140
+  ]
+ ],
+ "src": "/root/.claude/uploads/164b86a1-ee5f-5ccd-bad4-ded5aa95eb0d/418679e4-copy_B3DC7E30-AB3B-4FD9-8FDA-A065FA7B5707.mov",
+ "start": 24.0,
+ "duration": 18.26,
+ "out": "/home/user/Nikola123232/shorts/short3.mp4",
+ "captions": [
+  [
+   26.8,
+   27.9,
+   "Caminos!",
+   []
+  ],
+  [
+   34.3,
+   36.8,
+   "Finally, about f*ckin' time!",
+   [
+    "time"
+   ]
+  ],
+  [
+   38.3,
+   40.3,
+   "Yo, why's everything running so late?",
+   [
+    "late"
+   ]
+  ],
+  [
+   40.4,
+   41.5,
+   "Sh*t, you haven't heard?",
+   []
+  ],
+  [
+   41.5,
+   42.26,
+   "Counselor Reigns got canned.",
+   [
+    "canned"
+   ]
+  ]
+ ]
+}
