@@ -3,6 +3,8 @@ import sys, json, subprocess, math
 import numpy as np
 sys.path.insert(0, '/home/user/Nikola123232/age')
 from inpaint import diffuse
+sys.path.insert(0, '/home/user/Nikola123232/shorts/sr')
+from srnet import SR
 from PIL import Image, ImageDraw, ImageFont, ImageFilter
 cfg = json.load(open(sys.argv[1])); SW, SH = cfg["src_w"], cfg["src_h"]; W, H = 1080, 1920; FPS = 30
 MONT = "/home/user/Nikola123232/assets/fonts/Montserrat-Var.ttf"
@@ -46,6 +48,7 @@ def draw_caption(canvas, t):
 dec = subprocess.Popen(["ffmpeg", "-v", "error", "-ss", str(START), "-i", cfg["src"], "-t", str(dur), "-f", "rawvideo", "-pix_fmt", "rgb24", "-r", str(FPS), "-"], stdout=subprocess.PIPE)
 enc = subprocess.Popen(["ffmpeg", "-y", "-hide_banner", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-ss", str(START), "-i", cfg["src"], "-map", "0:v:0", "-map", "1:a:0",
     "-af", "loudnorm=I=-14:TP=-1.5:LRA=11", "-c:v", "libx264", "-preset", "slow", "-crf", "17", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-ar", "44100", "-t", f"{dur:.3f}", "-movflags", "+faststart", cfg["out"]], stdin=subprocess.PIPE)
+SRM = SR() if cfg.get('sr', True) else None; prev_sr = None
 n = 0
 while True:
     raw = dec.stdout.read(SW * SH * 3)
@@ -65,7 +68,11 @@ while True:
     gimg = g.resize((W, GAME_H), Image.LANCZOS)
     if zoom > 1.0:
         cw2, ch2 = int(W / zoom), int(GAME_H / zoom); gimg = gimg.crop(((W - cw2) // 2, (GAME_H - ch2) // 2, (W - cw2) // 2 + cw2, (GAME_H - ch2) // 2 + ch2)).resize((W, GAME_H), Image.LANCZOS)
-    cimg = fr.crop(tuple(cam)).resize((W, CAM_H), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=2.2, percent=70, threshold=2))
+    if SRM is not None:                                                                    # Real-ESRGAN (general x4v3) on the tiny facecam crop, light temporal smoothing against flicker
+        y = SRM(np.asarray(fr.crop(tuple(cam)))).astype(np.float32)
+        if prev_sr is not None: y = 0.8 * y + 0.2 * prev_sr
+        prev_sr = y; cimg = Image.fromarray(np.clip(y, 0, 255).astype(np.uint8)).resize((W, CAM_H), Image.LANCZOS)
+    else: cimg = fr.crop(tuple(cam)).resize((W, CAM_H), Image.LANCZOS).filter(ImageFilter.UnsharpMask(radius=2.2, percent=70, threshold=2))
     sh = Image.new("RGBA", (W + 60, CAM_H + 60), (0, 0, 0, 0)); ImageDraw.Draw(sh).rounded_rectangle((30, 40, W + 30, CAM_H + 40), 26, fill=(0, 0, 0, 120)); canvas.alpha_composite(sh.filter(ImageFilter.GaussianBlur(14)), (-30, CAM_Y - 30))
     canvas.alpha_composite(rounded(cimg, 26), (0, CAM_Y))
     sh2 = Image.new("RGBA", (W + 60, GAME_H + 60), (0, 0, 0, 0)); ImageDraw.Draw(sh2).rounded_rectangle((30, 40, W + 30, GAME_H + 40), 26, fill=(0, 0, 0, 120)); canvas.alpha_composite(sh2.filter(ImageFilter.GaussianBlur(14)), (-30, GAME_Y - 30))
