@@ -1,0 +1,692 @@
+[
+{
+"s": 0.58,
+"e": 1.775,
+"text": "On one coding test,"
+},
+{
+"s": 1.785,
+"e": 5.138000000000001,
+"text": "OpenAI's cheaper model came within half a point of"
+},
+{
+"s": 5.148000000000001,
+"e": 6.29925,
+"text": "its flagship."
+},
+{
+"s": 6.899,
+"e": 9.778541666666666,
+"text": "And it cost about a fifth as much on that test."
+},
+{
+"s": 10.129,
+"e": 12.330166666666665,
+"text": "So when would you actually need Astra?"
+},
+{
+"s": 14.059999999999999,
+"e": 15.642999999999999,
+"text": "On November 17th,"
+},
+{
+"s": 15.652999999999999,
+"e": 21.22025,
+"text": "OpenAI released two models under one name: GPT-6.2."
+},
+{
+"s": 21.57,
+"e": 23.198666666666668,
+"text": "Astra is the flagship."
+},
+{
+"s": 23.349,
+"e": 26.586999999999996,
+"text": "OpenAI pitches it at the hardest projects,"
+},
+{
+"s": 26.596999999999998,
+"e": 29.546999999999997,
+"text": "the long, messy work where one wrong assumption can"
+},
+{
+"s": 29.557,
+"e": 31.46266666666667,
+"text": "cost you an afternoon."
+},
+{
+"s": 31.813,
+"e": 33.164,
+"text": "Sol is the efficient one,"
+},
+{
+"s": 33.174,
+"e": 35.12041666666667,
+"text": "built for everyday work."
+},
+{
+"s": 35.27,
+"e": 36.964625000000005,
+"text": "And the price gap is real."
+},
+{
+"s": 37.415000000000006,
+"e": 38.687000000000005,
+"text": "In the API,"
+},
+{
+"s": 38.697,
+"e": 42.034000000000006,
+"text": "Astra costs $8 per million input tokens,"
+},
+{
+"s": 42.044000000000004,
+"e": 44.855250000000005,
+"text": "and $40 per million output."
+},
+{
+"s": 45.155,
+"e": 47.119375000000005,
+"text": "Sol is $2 and $10."
+},
+{
+"s": 47.419000000000004,
+"e": 48.798,
+"text": "That's a quarter of the price,"
+},
+{
+"s": 48.808,
+"e": 50.212541666666674,
+"text": "token for token."
+},
+{
+"s": 50.663000000000004,
+"e": 52.690541666666675,
+"text": "So here's why each one matters."
+},
+{
+"s": 52.841,
+"e": 54.834,
+"text": "If you run lots of routine jobs,"
+},
+{
+"s": 54.844,
+"e": 57.92516666666668,
+"text": "Sol makes your budget go four times further."
+},
+{
+"s": 58.075,
+"e": 60.62200000000001,
+"text": "If you've got one job that has to be right,"
+},
+{
+"s": 60.632000000000005,
+"e": 62.893333333333345,
+"text": "Astra is the one built to carry it."
+},
+{
+"s": 64.423,
+"e": 66.60329166666668,
+"text": "Now, the result that caught my eye."
+},
+{
+"s": 66.753,
+"e": 71.37850000000002,
+"text": "FrontierCode 2.0 is a coding benchmark run by Cognition."
+},
+{
+"s": 71.529,
+"e": 73.76337500000002,
+"text": "It doesn't just check whether the code runs."
+},
+{
+"s": 73.913,
+"e": 76.291,
+"text": "It asks whether a project's maintainers would"
+},
+{
+"s": 76.301,
+"e": 78.2635416666667,
+"text": "actually merge the change."
+},
+{
+"s": 78.414,
+"e": 79.346,
+"text": "That's a high bar,"
+},
+{
+"s": 79.35600000000001,
+"e": 81.68520833333336,
+"text": "and it looks a lot like real work."
+},
+{
+"s": 81.83500000000001,
+"e": 84.42262500000004,
+"text": "Both models ran at max reasoning effort."
+},
+{
+"s": 85.223,
+"e": 87.51370833333338,
+"text": "Astra scored 44.2."
+},
+{
+"s": 88.114,
+"e": 90.30537500000005,
+"text": "Sol scored 43.8."
+},
+{
+"s": 90.75500000000001,
+"e": 93.13354166666672,
+"text": "That's a gap of 0.4 points."
+},
+{
+"s": 94.084,
+"e": 95.42937500000005,
+"text": "Now look at the bill."
+},
+{
+"s": 95.929,
+"e": 97.093,
+"text": "On this benchmark,"
+},
+{
+"s": 97.10300000000001,
+"e": 100.81837500000005,
+"text": "Astra cost about $5.97 per task."
+},
+{
+"s": 101.36800000000001,
+"e": 103.73733333333338,
+"text": "Sol cost about $1.29."
+},
+{
+"s": 104.187,
+"e": 105.48866666666672,
+"text": "Roughly a fifth."
+},
+{
+"s": 106.43900000000001,
+"e": 108.64670833333338,
+"text": "Here's how OpenAI sums it up."
+},
+{
+"s": 108.797,
+"e": 111.40899999999999,
+"text": "Sol comes within half a point of Astra,"
+},
+{
+"s": 111.419,
+"e": 113.109,
+"text": "at about one-fifth the cost,"
+},
+{
+"s": 113.119,
+"e": 114.64295833333338,
+"text": "with both at max."
+},
+{
+"s": 115.193,
+"e": 116.41058333333339,
+"text": "Two caveats."
+},
+{
+"s": 116.561,
+"e": 118.858,
+"text": "These are OpenAI-reported numbers,"
+},
+{
+"s": 118.86800000000001,
+"e": 120.50570833333339,
+"text": "from one benchmark."
+},
+{
+"s": 120.656,
+"e": 122.699,
+"text": "And that cost is per task on this test,"
+},
+{
+"s": 122.709,
+"e": 124.97041666666672,
+"text": "not a quote for your workload."
+},
+{
+"s": 125.52,
+"e": 127.5297083333334,
+"text": "But it does tell you something useful."
+},
+{
+"s": 127.68,
+"e": 129.748,
+"text": "On well-defined coding changes,"
+},
+{
+"s": 129.75799999999998,
+"e": 132.16116666666673,
+"text": "the flagship isn't buying you much."
+},
+{
+"s": 132.31099999999998,
+"e": 133.9782916666667,
+"text": "So where does the gap show up?"
+},
+{
+"s": 135.60799999999998,
+"e": 139.25495833333338,
+"text": "Scene one. A small bakery needs a landing page."
+},
+{
+"s": 139.405,
+"e": 140.666,
+"text": "Hero image, menu,"
+},
+{
+"s": 140.676,
+"e": 143.1004166666667,
+"text": "opening hours, a contact form."
+},
+{
+"s": 143.25,
+"e": 144.764,
+"text": "You've got a wireframe,"
+},
+{
+"s": 144.774,
+"e": 147.951,
+"text": "and that's exactly the kind of job FrontierCode"
+},
+{
+"s": 147.96099999999998,
+"e": 149.475,
+"text": "rewards: a clear spec,"
+},
+{
+"s": 149.48499999999999,
+"e": 150.444,
+"text": "a few files,"
+},
+{
+"s": 150.45399999999998,
+"e": 153.061125,
+"text": "and an easy way to check the result."
+},
+{
+"s": 153.411,
+"e": 154.97374999999997,
+"text": "Then the complication."
+},
+{
+"s": 155.124,
+"e": 157.32,
+"text": "The owner wants it to work on phones,"
+},
+{
+"s": 157.32999999999998,
+"e": 161.5125416666666,
+"text": "load fast, and send form messages straight to their inbox."
+},
+{
+"s": 161.66299999999998,
+"e": 162.994,
+"text": "And after the first draft,"
+},
+{
+"s": 163.004,
+"e": 165.46783333333326,
+"text": "they'll want three rounds of changes."
+},
+{
+"s": 165.618,
+"e": 166.447,
+"text": "That's more work,"
+},
+{
+"s": 166.457,
+"e": 168.5264166666666,
+"text": "but it's still well-defined work."
+},
+{
+"s": 168.676,
+"e": 169.665,
+"text": "If the layout breaks,"
+},
+{
+"s": 169.67499999999998,
+"e": 170.559,
+"text": "you see it."
+},
+{
+"s": 170.569,
+"e": 171.549,
+"text": "If the form fails,"
+},
+{
+"s": 171.559,
+"e": 173.1253749999999,
+"text": "you know in seconds."
+},
+{
+"s": 173.575,
+"e": 174.98458333333323,
+"text": "My pick here is Sol."
+},
+{
+"s": 175.33499999999998,
+"e": 178.09,
+"text": "When a mistake is cheap to spot and cheap to fix,"
+},
+{
+"s": 178.1,
+"e": 179.90091666666655,
+"text": "you don't need the flagship."
+},
+{
+"s": 180.051,
+"e": 182.233,
+"text": "At that benchmark's cost ratio,"
+},
+{
+"s": 182.243,
+"e": 185.315,
+"text": "you could run about five Sol passes for the price"
+},
+{
+"s": 185.325,
+"e": 186.8793333333332,
+"text": "of one Astra pass."
+},
+{
+"s": 188.509,
+"e": 190.6163333333332,
+"text": "Scene two is a different animal."
+},
+{
+"s": 190.766,
+"e": 192.819,
+"text": "Checkout totals are off by a cent,"
+},
+{
+"s": 192.82899999999998,
+"e": 194.4317916666665,
+"text": "but only sometimes."
+},
+{
+"s": 194.582,
+"e": 196.255,
+"text": "The error shows up on the receipt,"
+},
+{
+"s": 196.265,
+"e": 198.0786666666665,
+"text": "but the cause isn't there."
+},
+{
+"s": 198.22899999999998,
+"e": 199.755,
+"text": "It runs back through the cart,"
+},
+{
+"s": 199.765,
+"e": 200.907,
+"text": "a currency helper,"
+},
+{
+"s": 200.917,
+"e": 204.38037499999982,
+"text": "and a discount rule someone changed months ago."
+},
+{
+"s": 204.53,
+"e": 207.149,
+"text": "You can only reproduce it with the right coupon,"
+},
+{
+"s": 207.159,
+"e": 208.77233333333314,
+"text": "in the right currency."
+},
+{
+"s": 209.12199999999999,
+"e": 210.536,
+"text": "Here's the complication:"
+},
+{
+"s": 210.546,
+"e": 212.9418333333331,
+"text": "every file looks fine on its own."
+},
+{
+"s": 213.09199999999998,
+"e": 215.04508333333308,
+"text": "The bug is in how they connect."
+},
+{
+"s": 215.195,
+"e": 217.387,
+"text": "And a wrong fix doesn't fail loudly."
+},
+{
+"s": 217.397,
+"e": 220.17887499999975,
+"text": "It ships, and quietly charges the wrong amount."
+},
+{
+"s": 220.629,
+"e": 222.74162499999974,
+"text": "This is where I'd reach for Astra."
+},
+{
+"s": 223.09199999999998,
+"e": 225.096,
+"text": "Not because Sol can't read code,"
+},
+{
+"s": 225.106,
+"e": 227.954,
+"text": "but because a confident wrong answer costs more"
+},
+{
+"s": 227.964,
+"e": 229.6537916666664,
+"text": "than the price difference."
+},
+{
+"s": 229.804,
+"e": 232.677,
+"text": "Let Sol reproduce the bug and add logging."
+},
+{
+"s": 232.68699999999998,
+"e": 234.49554166666638,
+"text": "Then hand the fix to Astra."
+},
+{
+"s": 236.12599999999998,
+"e": 238.613,
+"text": "Scene three. You've got rough meeting notes,"
+},
+{
+"s": 238.623,
+"e": 241.43149999999972,
+"text": "and you need a ten-slide deck by tomorrow."
+},
+{
+"s": 241.581,
+"e": 243.044,
+"text": "Fragments, a few numbers,"
+},
+{
+"s": 243.054,
+"e": 245.03508333333303,
+"text": "half an idea for a chart."
+},
+{
+"s": 245.385,
+"e": 246.641,
+"text": "For an internal update,"
+},
+{
+"s": 246.65099999999998,
+"e": 247.7883749999997,
+"text": "Sol is fine."
+},
+{
+"s": 247.938,
+"e": 249.988,
+"text": "It'll turn the notes into an outline,"
+},
+{
+"s": 249.998,
+"e": 251.548,
+"text": "headlines and speaker notes,"
+},
+{
+"s": 251.558,
+"e": 254.38204166666634,
+"text": "and you'll tidy the rest in a few minutes."
+},
+{
+"s": 254.832,
+"e": 256.34691666666635,
+"text": "Now change the job."
+},
+{
+"s": 256.697,
+"e": 259.757,
+"text": "The deck has to follow a strict brand template:"
+},
+{
+"s": 259.767,
+"e": 261.57099999999997,
+"text": "fixed fonts, locked layouts,"
+},
+{
+"s": 261.58099999999996,
+"e": 264.0648749999997,
+"text": "a legal footer on every slide."
+},
+{
+"s": 264.215,
+"e": 266.339,
+"text": "And the source isn't notes anymore."
+},
+{
+"s": 266.349,
+"e": 269.007,
+"text": "It's a forty-page report and a spreadsheet,"
+},
+{
+"s": 269.017,
+"e": 271.0819583333331,
+"text": "and every figure has to match."
+},
+{
+"s": 271.23199999999997,
+"e": 274.023,
+"text": "Now, one wrong number in front of a client is the"
+},
+{
+"s": 274.033,
+"e": 275.6322499999998,
+"text": "expensive mistake."
+},
+{
+"s": 276.082,
+"e": 277.9204166666665,
+"text": "That's when I'd switch to Astra."
+},
+{
+"s": 278.07,
+"e": 279.476,
+"text": "Same kind of task."
+},
+{
+"s": 279.486,
+"e": 280.7243749999999,
+"text": "Different stakes."
+},
+{
+"s": 282.454,
+"e": 284.0089999999999,
+"text": "So here's the verdict."
+},
+{
+"s": 284.159,
+"e": 285.843,
+"text": "Under Sol: the bakery site,"
+},
+{
+"s": 285.853,
+"e": 286.859,
+"text": "the internal deck,"
+},
+{
+"s": 286.86899999999997,
+"e": 289.4945416666666,
+"text": "and most routine code changes."
+},
+{
+"s": 289.645,
+"e": 292.3,
+"text": "It came within half a point on that coding test,"
+},
+{
+"s": 292.31,
+"e": 294.0617499999999,
+"text": "at a fraction of the cost."
+},
+{
+"s": 294.412,
+"e": 296.489,
+"text": "Under Astra: the cross-file money bug,"
+},
+{
+"s": 296.49899999999997,
+"e": 299.43366666666657,
+"text": "and the client deck with a strict template."
+},
+{
+"s": 299.884,
+"e": 301.5297499999999,
+"text": "And the switch rule is simple."
+},
+{
+"s": 301.78,
+"e": 302.9944166666666,
+"text": "Start with Sol."
+},
+{
+"s": 303.144,
+"e": 306.361,
+"text": "Move to Astra when the work spans lots of connected"
+},
+{
+"s": 306.371,
+"e": 309.049,
+"text": "pieces, when you can't check the result quickly,"
+},
+{
+"s": 309.05899999999997,
+"e": 312.5413333333333,
+"text": "or when one mistake costs more than the price gap."
+},
+{
+"s": 312.691,
+"e": 313.991,
+"text": "If none of those are true,"
+},
+{
+"s": 314.001,
+"e": 315.82512499999996,
+"text": "Sol is probably enough."
+},
+{
+"s": 316.275,
+"e": 317.718,
+"text": "Sol is your default."
+},
+{
+"s": 317.728,
+"e": 319.498125,
+"text": "Astra is your escalation."
+}
+]

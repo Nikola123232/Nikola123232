@@ -32,3 +32,7 @@ shorts/qa8/
 shorts/qa9/
 shorts/qa16/
 shorts/qa21/
+gpt62/node_modules/
+gpt62/out/video_noaudio.mp4
+gpt62/out/*.wav
+gpt62/scripts/__pycache__/
