@@ -130,7 +130,7 @@ export const Bug: React.FC<{f: number}> = ({f}) => {
 				</Abs>
 			</AbsoluteFill>
 			{/* 4. the wrong fix ships */}
-			<AbsoluteFill style={{opacity: life(f, tWrong - 2, tPick + 30, 10, 14)}}>
+			<AbsoluteFill style={{opacity: life(f, tWrong - 2, tPick + 4, 10, 10)}}>
 				<Abs x={620} y={480} center style={{transform: `translate(-50%,-50%) translateY(${(1 - appear(f, tWrong, 16)) * 60}px)`}}>
 					<div style={{width: 640, borderRadius: 16, background: '#0E1217', border: '2px solid #2D3A48', overflow: 'hidden'}}>
 						<div style={{padding: '12px 18px', background: '#141A21', fontFamily: MONO, fontSize: 22, color: '#C9D4E0'}}>hotfix: patch receipt total</div>

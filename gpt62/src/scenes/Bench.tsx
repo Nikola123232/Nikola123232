@@ -206,7 +206,7 @@ export const Bench: React.FC<{f: number}> = ({f}) => {
 				<Camera f={f} keys={[[tTake, {s: 1.04}], [tWhere, {s: 1}], [tWhere + 50, {s: 1.06, y: 560}]]}>
 					<Abs x={960} y={kf(f, [tWhere - 4, tWhere + 14], [420, 210])} center style={{textAlign: 'center', whiteSpace: 'nowrap', transform: `translate(-50%,-50%) scale(${kf(f, [tWhere - 4, tWhere + 14], [1, 0.62])})`}}>
 						<div style={{fontFamily: FONT, fontSize: 32, color: C.dim, letterSpacing: 3, fontWeight: 700}}>ON WELL-DEFINED CODING CHANGES</div>
-						<div style={{fontFamily: DISPLAY, fontSize: 92, fontWeight: 900, marginTop: 10, opacity: appear(f, tTake2)}}>
+						<div style={{fontFamily: DISPLAY, fontSize: 92, fontWeight: 900, marginTop: 10, opacity: appear(f, tTake + 12)}}>
 							The flagship isn't <span style={{color: C.sol}}>buying you much</span>
 						</div>
 					</Abs>
