@@ -26,7 +26,7 @@ export const Verdict: React.FC<{f: number}> = ({f}) => {
 			{/* columns */}
 			<AbsoluteFill style={{opacity: 1 - toRule, transform: `translateY(${toRule * -80}px)`}}>
 				<Camera f={f} keys={[[V0, {s: 1.06}], [tAst - 10, {s: 1.0, x: 900}], [tAst + 30, {s: 1.0, x: 1020}], [tRule, {s: 1.0, x: 960}]]}>
-					<Abs x={960} y={160} center style={{fontFamily: DISPLAY, fontSize: 76, fontWeight: 900, opacity: appear(f, V0)}}>The verdict</Abs>
+					<Abs x={960} y={160} center style={{fontFamily: DISPLAY, fontSize: 76, fontWeight: 900, opacity: appear(f, V0 - 26)}}>The verdict</Abs>
 					{(['sol', 'astra'] as const).map((m, i) => (
 						<Abs key={m} x={i ? 1010 : 150} y={270} w={760} style={{opacity: appear(f, i ? tAst - 8 : tSol - 8)}}>
 							<div style={{display: 'flex', alignItems: 'center', justifyContent: 'space-between', paddingBottom: 18, marginBottom: 26, borderBottom: `3px solid ${m === 'sol' ? C.sol : C.astra}`}}>

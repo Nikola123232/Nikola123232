@@ -55,8 +55,8 @@ export const Bug: React.FC<{f: number}> = ({f}) => {
 				{Array.from({length: 60}).map((_, i) => <div key={i}>{'  '.repeat(i % 7)}{['assert total == expected', 'Decimal("0.01")', 'round(x, 2)', 'RULES["SAVE15"] = 0.15', 'def checkout(cart):', 'log.debug(order)', 'git blame discount_rules.py'][i % 7]}</div>)}
 			</AbsoluteFill>
 			{/* 1. the symptom */}
-			<AbsoluteFill style={{opacity: life(f, B0 - 4, tTrace + 4, 8, 10)}}>
-				<Camera f={f} keys={[[B0, {s: 1.1}], [tTrace, {s: 1.0}]]}>
+			<AbsoluteFill style={{opacity: life(f, B0 - 30, tTrace + 4, 8, 10)}}>
+				<Camera f={f} keys={[[B0 - 30, {s: 1.12}], [tTrace, {s: 1.0}]]}>
 					<Abs x={700} y={500} center>
 						<div style={{width: 560, padding: '36px 40px', background: '#F4F1EA', color: '#1A1A1A', fontFamily: MONO, fontSize: 30, lineHeight: 1.7, borderRadius: 6, boxShadow: '0 40px 100px rgba(0,0,0,0.6)', transform: 'rotate(-2deg)'}}>
 							<div style={{textAlign: 'center', fontWeight: 800, letterSpacing: 4}}>RECEIPT</div>

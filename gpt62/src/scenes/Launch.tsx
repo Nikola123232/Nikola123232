@@ -102,17 +102,17 @@ export const Launch: React.FC<{f: number}> = ({f}) => {
 	// card choreography
 	const aExp = kf(f, [tA - 6, tA + 16], [0, 1], easeInOut), sExp = kf(f, [tS - 6, tS + 16], [0, 1], easeInOut);
 	const toPrice = kf(f, [tP0 - 8, tP0 + 10], [0, 1], easeInOut);
-	const astraX = kf(f, [L0, L0 + 24], [700, 560]) - aExp * 0 + sExp * -900;
-	const solX = kf(f, [L0 + 6, L0 + 30], [1220, 1360]) + aExp * 900 - sExp * 1700;
+	const astraX = kf(f, [L0 - 20, L0 + 10], [700, 560]) - aExp * 0 + sExp * -900;
+	const solX = kf(f, [L0 - 14, L0 + 16], [1220, 1360]) + aExp * 900 - sExp * 1700;
 	const cardsOp = (1 - toPrice);
-	const cardIn = pop(f, L0 + 4), cardIn2 = pop(f, L0 + 10);
+	const cardIn = pop(f, L0 - 16), cardIn2 = pop(f, L0 - 10);
 	const titleOp = 1 - aExp;
 	return (
 		<AbsoluteFill>
 			<Camera f={f} keys={[[L0, {s: 1.08}], [tA, {s: 1}], [tA + 40, {s: 1.04, x: 900}], [tS, {s: 1.04, x: 900}], [tS + 40, {s: 1.02, x: 940}], [tP0, {s: 1}], [tW, {s: 1.05}], [tW + 1, {s: 1.0}]]}>
 				{/* title */}
 				<Abs x={960} y={250} center style={{opacity: titleOp, textAlign: 'center', transform: `translate(-50%,-50%) translateY(${aExp * -60}px)`}}>
-					<div style={{fontFamily: DISPLAY, fontWeight: 900, fontSize: 150, letterSpacing: -2, color: '#fff', opacity: appear(f, L0), lineHeight: 1}}>GPT-6.2</div>
+					<div style={{fontFamily: DISPLAY, fontWeight: 900, fontSize: 150, letterSpacing: -2, color: '#fff', opacity: appear(f, L0 - 26), lineHeight: 1}}>GPT-6.2</div>
 					<div style={{marginTop: 18, opacity: appear(f, word('launch', 'november'))}}><Tag color={C.ink}>Released November 17, 2026</Tag></div>
 				</Abs>
 				<Card f={f} m="astra" x={astraX} y={kf(aExp, [0, 1], [650, 520])} s={(0.62 + 0.38 * cardIn) * kf(aExp, [0, 1], [0.7, 1])} ry={kf(f, [L0, L0 + 24], [35, 10]) - aExp * 10} op={Math.min(cardIn, cardsOp)} line="For the hardest projects" />

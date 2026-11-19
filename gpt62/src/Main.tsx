@@ -55,7 +55,7 @@ const SceneWindow: React.FC<{f: number; name: string}> = ({f, name}) => {
 	const x = (1 - inP) * 380 - outP * 380;
 	const op = Math.min(inP, 1 - outP);
 	return (
-		<AbsoluteFill style={{opacity: op, transform: `translateX(${x}px) scale(${1 + (1 - inP) * 0.06 + outP * 0.04})`, filter: op < 0.97 ? `blur(${(1 - op) * 10}px)` : undefined}}>
+		<AbsoluteFill style={{opacity: op, transform: `translateX(${x + Math.sin(f / 97) * 6}px) translateY(${Math.cos(f / 113) * 4}px) scale(${1.012 + Math.sin(f / 140) * 0.008 + (1 - inP) * 0.06 + outP * 0.04})`, filter: op < 0.97 ? `blur(${(1 - op) * 10}px)` : undefined}}>
 			<S f={f} />
 		</AbsoluteFill>
 	);

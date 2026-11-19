@@ -79,9 +79,9 @@ export const Bench: React.FC<{f: number}> = ({f}) => {
 	return (
 		<AbsoluteFill>
 			{/* A: what the test measures */}
-			<AbsoluteFill style={{opacity: life(f, B - 4, tMax, 6, 10)}}>
-				<Camera f={f} keys={[[B, {s: 0.94}], [tMerge, {s: 1.0}], [tMerge + 40, {s: 1.05, y: 570}], [tMax, {s: 1.06, y: 570}]]}>
-					<Abs x={960} y={235} center style={{textAlign: 'center', opacity: appear(f, B)}}>
+			<AbsoluteFill style={{opacity: life(f, B - 30, tMax, 6, 10)}}>
+				<Camera f={f} keys={[[B - 30, {s: 0.94}], [tMerge, {s: 1.0}], [tMerge + 40, {s: 1.05, y: 570}], [tMax, {s: 1.06, y: 570}]]}>
+					<Abs x={960} y={235} center style={{textAlign: 'center', opacity: appear(f, B - 26)}}>
 						<div style={{fontFamily: DISPLAY, fontSize: 104, fontWeight: 900, letterSpacing: -1}}>FrontierCode 2.0</div>
 						<div style={{marginTop: 10, opacity: appear(f, word('fc', 'cognition'))}}><Tag color={C.ink}>Coding benchmark · run by Cognition</Tag></div>
 					</Abs>

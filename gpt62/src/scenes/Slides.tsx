@@ -42,7 +42,7 @@ export const Slides: React.FC<{f: number}> = ({f}) => {
 			<Camera f={f} keys={[[S0, {s: 1.06, y: 540}], [tSol - 10, {s: 1.0}], [tOut, {s: 0.96, rx: 0}], [tComp, {s: 1.02}], [tTpl + 20, {s: 0.94}], [tSrc, {s: 0.9, x: 900}], [tWrong - 6, {s: 0.9, x: 900}], [tWrong + 20, {s: 2.7, x: 1020, y: 430}], [tPick - 6, {s: 2.7, x: 1020, y: 430}], [tPick + 12, {s: 0.95, x: 960}]]}>
 				{/* sticky notes -> deck */}
 				{NOTES.map((t, i) => {
-					const p = pop(f, (i < 2 ? S0 + 10 + i * 8 : tFrag + (i - 2) * 9));
+					const p = pop(f, (i < 2 ? S0 - 20 + i * 8 : tFrag + (i - 2) * 9));
 					const x0 = 480 + (i % 3) * 470 + rnd(i) * 60, y0 = 380 + Math.floor(i / 3) * 320 + rnd(i + 4) * 40;
 					const fly = kf(f, [tSol - 10 + i * 2, tSol + 14 + i * 2], [0, 1], easeInOut);
 					return (

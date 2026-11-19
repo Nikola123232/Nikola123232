@@ -110,7 +110,7 @@ export const Web: React.FC<{f: number}> = ({f}) => {
 				<Abs x={browserX} y={560} center style={{transform: `translate(-50%,-50%) scale(${1 - phone * 0.12})`, filter: dimPick > 0 ? `blur(${dimPick * 6}px)` : undefined, opacity: 1 - dimPick * 0.4}}>
 					<Browser><Site f={f} tParts={tParts} fill={fill} round={round} broken={broken} formState={formState} /></Browser>
 				</Abs>
-				<Abs x={960} y={560} center style={{opacity: life(f, W0 - 6, tParts[0] + 4, 8, 12), textAlign: 'center', whiteSpace: 'nowrap'}}>
+				<Abs x={960} y={560} center style={{opacity: life(f, W0 - 30, tParts[0] + 4, 8, 12), textAlign: 'center', whiteSpace: 'nowrap'}}>
 					<div style={{fontFamily: FONT, fontSize: 30, letterSpacing: 4, fontWeight: 700, color: CRUST}}>THE JOB</div>
 					<div style={{fontFamily: DISPLAY, fontSize: 88, fontWeight: 900, color: INK, marginTop: 8}}>A landing page for a small bakery</div>
 				</Abs>
