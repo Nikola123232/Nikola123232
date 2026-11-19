@@ -39,11 +39,11 @@ export const Slides: React.FC<{f: number}> = ({f}) => {
 		<AbsoluteFill style={{background: 'radial-gradient(1200px 800px at 50% 35%, #2A2233, #120F17)'}}>
 			{/* desk texture */}
 			<AbsoluteFill style={{backgroundImage: 'repeating-linear-gradient(115deg, rgba(255,255,255,0.018) 0 2px, transparent 2px 14px)'}} />
-			<Camera f={f} keys={[[S0, {s: 1.15, y: 520}], [tSol - 10, {s: 1.0}], [tOut, {s: 0.96, rx: 0}], [tComp, {s: 1.02}], [tTpl + 20, {s: 0.94}], [tSrc, {s: 0.9, x: 900}], [tWrong - 6, {s: 0.9, x: 900}], [tWrong + 20, {s: 2.2, x: 820, y: 400}], [tPick - 6, {s: 2.2, x: 820, y: 400}], [tPick + 12, {s: 0.95, x: 960}]]}>
+			<Camera f={f} keys={[[S0, {s: 1.06, y: 540}], [tSol - 10, {s: 1.0}], [tOut, {s: 0.96, rx: 0}], [tComp, {s: 1.02}], [tTpl + 20, {s: 0.94}], [tSrc, {s: 0.9, x: 900}], [tWrong - 6, {s: 0.9, x: 900}], [tWrong + 20, {s: 2.7, x: 1020, y: 430}], [tPick - 6, {s: 2.7, x: 1020, y: 430}], [tPick + 12, {s: 0.95, x: 960}]]}>
 				{/* sticky notes -> deck */}
 				{NOTES.map((t, i) => {
 					const p = pop(f, (i < 2 ? S0 + 10 + i * 8 : tFrag + (i - 2) * 9));
-					const x0 = 360 + (i % 3) * 470 + rnd(i) * 60, y0 = 300 + Math.floor(i / 3) * 330 + rnd(i + 4) * 40;
+					const x0 = 480 + (i % 3) * 470 + rnd(i) * 60, y0 = 380 + Math.floor(i / 3) * 320 + rnd(i + 4) * 40;
 					const fly = kf(f, [tSol - 10 + i * 2, tSol + 14 + i * 2], [0, 1], easeInOut);
 					return (
 						<Abs key={i} x={x0 + (960 - x0) * fly} y={y0 + (540 - y0) * fly} center style={{opacity: Math.min(1, p) * (1 - fly), transform: `translate(-50%,-50%) rotate(${(rnd(i + 2) - 0.5) * 12}deg) scale(${(0.5 + 0.5 * p) * (1 - fly * 0.7)})`}}>
@@ -54,9 +54,9 @@ export const Slides: React.FC<{f: number}> = ({f}) => {
 				<Abs x={1600} y={140} center style={{opacity: life(f, tTom - 4, tSol), transform: `translate(-50%,-50%) rotate(4deg) scale(${pop(f, tTom - 4)})`}}>
 					<div style={{padding: '14px 24px', borderRadius: 12, background: C.red, color: '#fff', fontFamily: FONT, fontWeight: 800, fontSize: 30}}>Due tomorrow, 9:00</div>
 				</Abs>
-				<Abs x={330} y={140} center style={{opacity: life(f, tTen - 4, tSol), fontFamily: DISPLAY, fontWeight: 900, fontSize: 48, color: '#fff', whiteSpace: 'nowrap'}}>Need: a 10-slide deck</Abs>
+				<Abs x={960} y={150} center style={{opacity: life(f, tTen - 4, tSol), fontFamily: DISPLAY, fontWeight: 900, fontSize: 48, color: '#fff', whiteSpace: 'nowrap'}}>Need: a 10-slide deck</Abs>
 				{/* deck grid in 3D */}
-				<Abs x={960} y={kf(f, [tSrc - 6, tSrc + 14], [540, 520])} center style={{opacity: toDeck, transformStyle: 'preserve-3d', transform: `translate(-50%,-50%) translateX(${kf(f, [tSrc - 6, tSrc + 14], [0, 260])}px) perspective(2000px) rotateX(${kf(f, [tSol, tSol + 30], [40, 18])}deg) rotateZ(${kf(f, [tSol, tSol + 30], [-8, 0])}deg)`}}>
+				<Abs x={960} y={kf(f, [tSrc - 6, tSrc + 14], [540, 520])} center style={{opacity: toDeck, transformStyle: 'preserve-3d', transform: `translate(-50%,-50%) translateX(${kf(f, [tSrc - 6, tSrc + 14], [0, 270])}px) scale(${kf(f, [tSrc - 6, tSrc + 14], [0.9, 0.64])}) perspective(2000px) rotateX(${kf(f, [tSol, tSol + 30], [40, 18])}deg) rotateZ(${kf(f, [tSol, tSol + 30], [-8, 0])}deg)`}}>
 					<div style={{display: 'grid', gridTemplateColumns: 'repeat(5, 320px)', gap: 26}}>
 						{Array.from({length: 10}).map((_, i) => {
 							const p = pop(f, tSol + 4 + i * 3);
@@ -115,13 +115,13 @@ export const Slides: React.FC<{f: number}> = ({f}) => {
 				</svg>
 				<Abs x={1220} y={170} center style={{opacity: life(f, tMatch, tWrong, 8, 8), fontFamily: DISPLAY, fontWeight: 800, fontSize: 44, color: BRAND2, whiteSpace: 'nowrap'}}>Every figure has to match</Abs>
 				{/* wrong number callout (world coords near slide 2) */}
-				<Abs x={820} y={300} center style={{opacity: life(f, tWrong + 10, tPick + 4, 8, 8), whiteSpace: 'nowrap', transform: 'translate(-50%,-50%) scale(0.45)'}}>
+				<Abs x={1020} y={360} center style={{opacity: life(f, tWrong + 10, tPick + 4, 8, 8), whiteSpace: 'nowrap', transform: 'translate(-50%,-50%) scale(0.4)'}}>
 					<div style={{padding: '14px 26px', borderRadius: 14, background: C.red, color: '#fff', fontFamily: DISPLAY, fontWeight: 900, fontSize: 44}}>Slide says 18.4% · report says 14.8%</div>
 					<div style={{marginTop: 10, textAlign: 'center'}}><Tag color="#fff" size={26} style={{background: 'rgba(0,0,0,0.6)'}}>Client-facing</Tag></div>
 				</Abs>
 			</Camera>
 			<AbsoluteFill style={{background: '#fff', opacity: flash}} />
-			<AbsoluteFill style={{background: `rgba(0,0,0,${kf(f, [tPick - 4, tPick + 10], [0, 0.55])})`}} />
+			<AbsoluteFill style={{background: `rgba(0,0,0,${kf(f, [tPick - 4, tPick + 10], [0, 0.55]) + kf(f, [tStakes - 6, tStakes + 8], [0, 0.25])})`}} />
 			<Pick f={f} at={tPick} m="astra" reason="Strict template, complex sources, one number that can't be wrong." y={kf(f, [tStakes - 6, tStakes + 10], [520, 250])} scale={kf(f, [tStakes - 6, tStakes + 10], [1, 0.72])} />
 			{/* same task, different stakes */}
 			<Abs x={960} y={640} center style={{opacity: stakesP, transform: `translate(-50%,-50%) translateY(${(1 - stakesP) * 40}px)`, display: 'flex', gap: 40}}>
